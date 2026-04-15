@@ -12,6 +12,8 @@ export const products = [
     description: 'Ação bactericida com fragrância duradoura para pisos e superfícies.',
     category: 'Doméstica',
     image: '/images/products/Desinf-uso-G-Lavanda-2L.png',
+    isOnSale: true,
+    saleLabel: 'OFERTA',
   },
   {
     id: 3,
@@ -33,6 +35,8 @@ export const products = [
     description: 'Ideal para cozinhas profissionais e limpeza de alto desempenho.',
     category: 'Profissional',
     image: '/images/products/Detergente-Alcalino-clorado-1L-1-400x600.png',
+    isOnSale: true,
+    saleLabel: 'OFERTA',
   },
   {
     id: 6,
@@ -54,6 +58,8 @@ export const products = [
     description: 'Dissolve sujeiras impregnadas com aplicação rápida e prática.',
     category: 'Automotivo',
     image: '/images/products/v-mol-500ml-1.png',
+    isOnSale: true,
+    saleLabel: 'OFERTA',
   },
   {
     id: 9,

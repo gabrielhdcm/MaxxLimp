@@ -1,7 +1,12 @@
 export default function ProductCard({ product, onOrder }) {
   return (
     <article className="reveal flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-[0_12px_32px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
-      <div className="flex h-32 items-center justify-center bg-gradient-to-br from-slate-50 via-white to-light p-3 sm:h-44 sm:p-4 md:h-56 md:p-5">
+      <div className="relative flex h-32 items-center justify-center bg-gradient-to-br from-slate-50 via-white to-light p-3 sm:h-44 sm:p-4 md:h-56 md:p-5">
+        {product.isOnSale && (
+          <span className="absolute left-2 top-2 z-10 rounded-full bg-red-500 px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-wide text-white shadow-md sm:left-3 sm:top-3 sm:px-3 sm:text-[11px]">
+            {product.saleLabel || 'OFERTA'}
+          </span>
+        )}
         <img
           src={product.image}
           alt={product.name}
