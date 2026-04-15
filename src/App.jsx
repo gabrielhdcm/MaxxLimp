@@ -89,7 +89,7 @@ export default function App() {
     revealElements.forEach((element) => observer.observe(element))
 
     return () => observer.disconnect()
-  }, [])
+  }, [selectedCategory])
 
   return (
     <div className="text-slate-800">
